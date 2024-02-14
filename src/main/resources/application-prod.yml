@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost/stackoverdb}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:postgres}
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 20
+      idle-timeout: 10000
+  jpa:
+    generate-ddl: false
+    show-sql: false
+    open-in-view: false
+  flyway:
+    locations: classpath:db/migration
