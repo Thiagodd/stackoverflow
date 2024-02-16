@@ -56,9 +56,9 @@ public class CrudController<T extends BaseEntity, E extends BaseDTO> implements 
     @Override
     @GetMapping("/{id}")
     public ResponseEntity<E> findById(@PathVariable Long id) {
-        var responseDTO = crudService.findById(id);
+        var dataDTO = crudService.findById(id);
 
-        return ResponseEntity.ok(responseDTO);
+        return ResponseEntity.ok(dataDTO);
     }
 
     @Override
