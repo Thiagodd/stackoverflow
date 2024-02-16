@@ -9,10 +9,10 @@ public enum ProblemType {
 
 
 
-    ENTITY_NOT_FOUND("Resource Not Found", "/entity-not-found",
+    ENTITY_NOT_FOUND("Entity Not Found", "/entity-not-found",
                              "The requested resource does not exist. Check the URL or provided identifier."),
 
-    ENTITY_IN_USE("Resource In Use", "/entity-in-use",
+    ENTITY_IN_USE("Entity In Use", "/entity-in-use",
                           "The requested resource is currently in use and cannot be modified or deleted. Try again later or contact support."),
 
     ERROR_BUSINESS("Business Rule Violation", "/business-error",
